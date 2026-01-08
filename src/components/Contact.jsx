@@ -14,7 +14,7 @@ const handleSubmit = async (e) => {
   setStatus('sending');
 
   try {
-    const res = await fetch('http://localhost:5000/api/contact', {
+    const res = await fetch('http://bokang-portfolio-backend.up.railway.app/api/contact', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData)

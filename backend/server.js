@@ -12,7 +12,3 @@ app.use(express.json());
 
 app.use('/api/contact', contactRoutes);
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`Backend running on http://localhost:${PORT}`);
-});
