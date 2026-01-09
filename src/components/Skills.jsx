@@ -3,10 +3,10 @@ import { Code } from 'lucide-react';
 
 const Skills = () => {
   const skills = {
-    frontend: ['React', 'React Native', 'HTML', 'CSS', 'JavaScript'],
+    frontend: ['React', 'React Native', 'HTML', 'CSS', 'JavaScript','Tailwindcss'],
     backend: ['Node.js', 'Express.js', 'RESTful APIs', 'Prisma'],
-    database: ['MySQL', 'Database Programming'],
-    tools: ['Git & GitHub', 'Docker', 'VS Code', 'Linux (Kali)']
+    database: ['MySQL', 'Database Programming','Postgres'],
+    tools: ['Git & GitHub', 'Docker', 'VS Code', 'Linux (Kali basic)']
   };
 
   return (

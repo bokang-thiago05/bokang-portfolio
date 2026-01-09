@@ -62,61 +62,9 @@ const handleSubmit = async (e) => {
           </div>
           <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-2xl border border-cyan-500/20">
             <MapPin className="mx-auto mb-3 text-cyan-400" size={32} />
-            <p className="text-gray-300 text-center">Hennenman, Free State, South Africa</p>
+            <p className="text-gray-300 text-center">Welkom, Free State, South Africa</p>
           </div>
         </div>
-
-        <form onSubmit={handleSubmit} className="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-cyan-500/20 mb-8">
-          <div className="mb-6">
-            <label className="block text-cyan-400 mb-2" htmlFor="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-              className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white focus:border-cyan-500 focus:outline-none"
-            />
-          </div>
-          <div className="mb-6">
-            <label className="block text-cyan-400 mb-2" htmlFor="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-              className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white focus:border-cyan-500 focus:outline-none"
-            />
-          </div>
-          <div className="mb-6">
-            <label className="block text-cyan-400 mb-2" htmlFor="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              required
-              rows="5"
-              className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white focus:border-cyan-500 focus:outline-none"
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            disabled={status === 'sending'}
-            className="w-full py-3 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-lg font-bold hover:shadow-lg hover:shadow-cyan-500/50 transition-all disabled:opacity-50"
-          >
-            {status === 'sending' ? 'Sending...' : 'Send Message'}
-          </button>
-          {status === 'success' && (
-            <p className="mt-4 text-green-400 text-center">Message sent successfully!</p>
-          )}
-          {status === 'error' && (
-            <p className="mt-4 text-red-400 text-center">Failed to send message. Please try again.</p>
-          )}
-        </form>
 
         <div className="flex gap-4 justify-center">
           <a href="https://github.com/bokang-thiago05" target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-gray-800 rounded-full hover:bg-cyan-500 transition-all hover:scale-110">
