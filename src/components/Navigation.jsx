@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/logo.svg';
+import logo from '../assets/favicon.png';
 
 const Navigation = ({ activeSection }) => {
   const scrollToSection = (id) => {
